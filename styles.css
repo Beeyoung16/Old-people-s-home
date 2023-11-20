@@ -1,0 +1,215 @@
+* {
+    font-family: arial;
+}
+
+body {
+    margin: 0px;
+}
+
+.BOX {
+    background-color: rgb(30, 30, 103);
+    color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.Home {
+    display: flex;
+    gap: 40px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: red;
+}
+nav a.active{
+    color: red;
+}
+
+.navlink-group {
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgb(30, 30, 103);
+}
+
+.navlink-group:hover .sub-menu{
+    display: flex;
+}
+
+.sub-menu a {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+.sub-menu a:hover {
+    background-color: rgb(37, 37, 127);
+}
+/* nav ends */
+
+/* footer */
+footer{
+    background-color: rgb(30, 30, 103);
+    color: white;
+    padding:  60px 50px 30px;
+    
+}
+.footer-main-content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer .newsletter-group {
+    display: flex;
+    width: 30px;
+    height: 30px;
+}
+footer .newsletter-group input[type="button"]{
+    background-color: red;
+    color: white;
+}
+/* footer .newsletter-group input[type="email"]::placeholder{
+    color: pink;
+} */
+
+footer .align {
+    display: flex;
+    gap: 20px;
+}
+footer a{
+    color: rgb(242, 236, 58);
+    text-decoration: none;
+}
+footer .align>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .F2{
+    display: flex;
+}
+footer .F2 img{
+    height: 100px;
+    align-self: center;
+}
+
+footer .F2 p {
+    text-align: justify;
+    line-height: 1.4em;
+}
+
+footer .F1 .image{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+footer .F4 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+footer .F5 {
+    text-align: center;
+    gap: 10px;
+}
+
+.sitemap {
+    border: 3px solid red;
+    padding: 3px 6px;
+}
+
+/* footer end */
+
+
+
+/* banner */
+.banner{
+    height: 80vh;
+    background-image: url(./Images/old\ man.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+}
+
+.index1 {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.index2 {
+    padding: 10px;
+    background-color: rgb(37, 37, 127);
+    color: white;
+}
+
+.index3 {
+    background-color: rgb(223, 227, 227);
+    color: brown;
+}
+
+.content1 {
+    /* background-color: rgb(223, 227, 227); */
+    color: brown;
+    display: grid;
+    gap: 30px;
+    /* gap: 20px; */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.info1 {
+    background-color: rgb(223, 227, 227);
+    border-radius: 10px;
+    padding: 10px;
+}
+.info2 {
+    background-color: rgb(223, 227, 227);
+    border-radius: 10px;
+    padding: 10px;
+}
+.info3 {
+    background-color: rgb(223, 227, 227);
+    border-radius: 10px;
+    padding: 10px;
+}
+.info4 {
+    background-color: rgb(223, 227, 227);
+    border-radius: 10px;
+    padding: 10px;
+}
+.info5 {
+    background-color: rgb(223, 227, 227);
+    border-radius: 10px;
+    padding: 10px;
+}
+.info6 {
+    background-color: rgb(223, 227, 227);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.content2{
+    display: grid;
+    background-color: rgb(223, 227, 227);
+    color: brown;
+}
+
+
+
+
+@media (max-width: 640px) {
+    .footer-main-content {
+        grid-template-columns: 1fr;
+    }
+}
