@@ -1,5 +1,10 @@
-* {
+/* * {
     font-family: arial;
+} */
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url(../FONTS/Montserrat/Montserrat-Bold.ttf);
 }
 
 body {
@@ -61,6 +66,7 @@ footer{
     background-color: rgb(30, 30, 103);
     color: white;
     padding:  60px 50px 30px;
+    margin-top: 30px;
     
 }
 .footer-main-content {
@@ -207,14 +213,21 @@ footer .F5 {
 .AboutUs {
     background-color: rgb(37, 37, 127);
     color: white;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden
 }
 .two-column-section {
-    padding-left: 10px;
+    /* padding-left: 10px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     text-align: justify;
     line-height: 1.8em;
+    margin: 30px;
+}
+.two-column-section>div{
+    padding: 30px;
 }
 
 .two-column-section  img{
@@ -222,11 +235,29 @@ footer .F5 {
     /* padding-left: 5px; */
 }
 
+.AboutUs input {
+    font-family: 'Montserrat-bold';
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: none;
+    border: 0px;
+    border-radius: 10px;
+    bottom: 40px;
+}
+
+.AboutUs input:hover {
+    background-color: rgb(193, 193, 221);
+}
+
+.AboutUs input.active {
+    color: red;
+}
+
 .testimonial-section > h3 { 
     text-align: center;
     margin-top: 50px;
+    font-size: 1.9em;
 }
-
 
 .testimonial-section > .content { 
     display: grid;
@@ -238,17 +269,14 @@ footer .F5 {
 
 .testimonial-section > .content > .card {
     border-radius: 10px;
-    background-color: gray;
+    background-color: rgb(204, 203, 203);
     padding: 20px;
 }
-
 
 .testimonial-section > .content > .card > .card-footer{
     display: flex;
     gap: 10px;
 }
-
-
 
 .testimonial-section > .content > .card > .card-footer > img{ 
     width: 50px;
@@ -256,74 +284,83 @@ footer .F5 {
     border-radius: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.index3 {
-    background-color: rgb(223, 227, 227);
-    color: brown;
+.what-we-do-section  input {
+    font-family: 'Montserrat-bold';
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    bottom: 40px;
+    background-color: rgb(37, 37, 127);
+    color: white;
 }
 
-.content1 {
-    /* background-color: rgb(223, 227, 227); */
-    color: brown;
+.what-we-do-section.hover{
+    background-color: rgb(193, 193, 221);
+
+}
+
+.content2 > h3{
+    /* text-shadow: 1px 1px; */
+    font-size: 1.5em;
+}
+
+.host-section {
+    padding-left: 15px;
+    margin: 10px;
     display: grid;
-    gap: 30px;
-    /* gap: 20px; */
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: justify;
+    line-height: 1.9em;
+    background-color: rgb(204, 203, 203);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.info1 {
-    background-color: rgb(223, 227, 227);
-    border-radius: 10px;
-    padding: 10px;
-}
-.info2 {
-    background-color: rgb(223, 227, 227);
-    border-radius: 10px;
-    padding: 10px;
-}
-.info3 {
-    background-color: rgb(223, 227, 227);
-    border-radius: 10px;
-    padding: 10px;
-}
-.info4 {
-    background-color: rgb(223, 227, 227);
-    border-radius: 10px;
-    padding: 10px;
-}
-.info5 {
-    background-color: rgb(223, 227, 227);
-    border-radius: 10px;
-    padding: 10px;
-}
-.info6 {
-    background-color: rgb(223, 227, 227);
-    border-radius: 10px;
-    padding: 10px;
+.host-section> div h3{
+    margin: 0px;
+
 }
 
-.content2{
-    display: grid;
-    background-color: rgb(223, 227, 227);
-    color: brown;
+.host-section> div p{
+    margin: 0px;
 }
 
 
+.host-section> div{
+    /* background-color: red; */
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.host-section img{
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .testimonial-section > .content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media (max-width: 640px) {
     .footer-main-content {
         grid-template-columns: 1fr;
+    }
+    .testimonial-section > .content {
+        grid-template-columns: 1fr;
+    }
+    .two-column-section {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .two-column-section.AboutUs img {
+        order: 1;
+    }
+    .two-column-section.AboutUs>div{
+        order: 2;
     }
 }
