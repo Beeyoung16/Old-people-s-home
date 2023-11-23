@@ -377,6 +377,7 @@ footer .F5 {
 @media (max-width: 640px) {
     .banner{
         text-align: center;
+        height: 60vh;
     }
     .footer-main-content {
         grid-template-columns: 1fr;
@@ -397,5 +398,11 @@ footer .F5 {
     }
     .two-column-section.AboutUs>div{
         order: 2;
+    }
+}
+
+@media (max-width: @iphone-screen) {
+    .banner::before{
+        background-attachment: scroll;
     }
 }
