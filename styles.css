@@ -31,7 +31,7 @@ nav img.logo{
     /* height: %; */
 }
 
-.Home {
+nav .nav-content {
     display: flex;
     gap: 40px;
 }
@@ -71,6 +71,10 @@ nav a.active{
 }
 .sub-menu a:hover {
     background-color: rgb(37, 37, 127);
+}
+
+nav .hamburger-icon{
+    display: none;
 }
 /* nav ends */
 
@@ -378,6 +382,14 @@ footer .F5 {
 }
 
 @media (max-width: 640px) {
+    nav .hamburger-icon{
+        display: block;
+    }
+
+    nav .nav-content{
+        display: none;
+    }
+    
     .banner{
         text-align: center;
         height: 60vh;

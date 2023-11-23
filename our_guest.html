@@ -11,12 +11,30 @@
 <body>
     <nav>
         <div class="BOX">
-                <div class="LOGO">LOGO</div>
-            <div class="Home">
-                <a href="./index.html">Home</a>
-                <a href="./about.html">About</a>
-                <a href="./our_guest.html" class="active">Our Guest</a>
+            <img src="./Images/logo2.png" class="logo">
+            <div class="nav-content">
+                <a href="./index.html" class="active">Home</a>
+                <div class="navlink-group" >
+                    <a href="./about.html">About</a>
+                    <div class="sub-menu">
+                        <a href="What-We-Do">What We Do</a>
+                        <a href="Where-We-Work">Where We Work</a>
+                        <a href="News&Stories">News & Stories</a>
+                    </div>
+                </div>    
+
+                <div class="navlink-group" >
+                    <a href="./our_guest.html">Our Guest</a>
+                    <!-- think of better things to put under about -->
+                    <!-- <div class="sub-menu">
+                        <a href="What-We-Do">Reviews we do</a>
+                        <a href="Where-We-Work">Where We Work</a>
+                    </div> -->
+                </div>    
                 <a href="./contact.html">Contact</a>
+            </div>
+            <div class="hamburger-icon">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
     </nav>
@@ -24,16 +42,11 @@
     <main>
         <h1>Page Content</h1>
     </main>
-    <footer>
+     <footer>
         <div class="footer-main-content">
-            <div class="F1">
-                <h4>STAY CONNECTED</h4>
-                <P>Join over 10,500 people who receive bi-weekly web marketing tips</P>
-                <div class="newsletter-group">
-                    <input type="email" placeholder="_Email Address">
-                    <input type="button" value="Sign-Up >">
-                </div>
-                <div class="image">
+            <div class="F0">
+                <img src="./Images/logo2.png">
+                <div class="social-icons">
                     <!-- <i class="fa-duotone fa-user" style="color: red;"></i> -->
                     <i class="fa-brands fa-facebook" style="font-size: 30px;"></i>
                     <i class="fa-brands fa-twitter" style="font-size: 30px;"></i>
@@ -45,6 +58,14 @@
                     <img src=""> -->
                 </div>
             </div>
+            <div class="F1">
+                <h4>STAY CONNECTED</h4>
+                <P>Join over 10,500 people who receive bi-weekly web marketing tips</P>
+                <div class="newsletter-group">
+                    <input type="email" placeholder="_Email Address">
+                    <input type="button" value="Sign-Up >">
+                </div>
+            </div>
             <div class="F2">
                 <div>
                     <h4>COMMITTED TO CHICAGO</h4>
@@ -53,7 +74,6 @@
                     </p>
                     <a href="#">More About Our BCorp Status</a>
                 </div>
-                <img src="./Images/cbc.png" alt="certified-logo">
 
             </div>
             <div class="F3">
@@ -79,7 +99,6 @@
         <div class="F4"> Orbit Media Studios - 4043 N Ravenswood Ave, Suite 316, Chicago,IL 60613 .<a href="#">Map</a>.Main (773) 348, 4851 . Support(773) 353 8314</div>
         <div class="F5">
             <p>Privacy Policy <span class="sitemap">sitemap</span> &copy; 2015 Orbit Media Studios</p>
-            
         </div>
         
     </footer>
