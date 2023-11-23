@@ -404,8 +404,9 @@ footer .F5 {
     }
 }
 
-@media (max-width: @iphone-screen) {
+@supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
     .banner::before{
         background-attachment: scroll;
     }
-}
+  }
